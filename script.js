@@ -6,6 +6,7 @@ window.onload=function () {
 
 function playMusic(){
 	player.play();
+	document.getElementById('songLength').innerHTML = Math.round(player.duration);
 }
 
 function pauseMusic(){
@@ -36,3 +37,4 @@ function volUp() {
 		player.volume=0;
 	}
 }
+
